@@ -1,0 +1,73 @@
+---
+name: 主页面配置
+
+---
+
+import { Playground, Props } from 'docz'
+import { Button ,Title } from './Config.tsx'
+
+# 项目基础配置
+    单个菜单路由跳转后的主页面配置,每一份配置路径在src/pages/#{主页面名}/columns.json
+## url 
+列表请求的地址
+## params 
+列表请求的参数
+## checkBox 
+列表是否带有多选功能
+## operation 
+列表内操作按钮的配置
+
+>
+#### (item)
+<Title title="name" main="按钮名称" fontSize='15'></Title>
+<Title title="type" main="按钮类型" fontSize='15'></Title>
+<Title title="drawerWidth" main="按钮弹出宽度" fontSize='15'></Title>
+>
+
+## searchListType 
+列表查询样式类型
+- 可选择参数 :  complexQuery  | singleQuery | multipleQuery
+
+>
+<Title title="singleQuery" main="简单的只带关键字的查询" fontSize='15'></Title>
+<Title title="complexQuery" main="复杂的带关键字的查询" fontSize='15'></Title>
+<Title title="multipleQuery" main="单行多条查询" fontSize='15'></Title>
+>
+
+## searchList
+列表查询配置数组
+
+>
+#### (item)
+<Title title="title" main="查询名称" fontSize='15'></Title>
+<Title title="type" main="按钮类型" fontSize='15'></Title>
+<Title title="key" main="字段名" fontSize='15'></Title>
+<Title title="placeholder" main="默认文字" fontSize='15'></Title>
+>
+
+#####  type 类型
+- 可选择参数 :  input  | select | period | number-interval | input-number | time-period | month-period | select-Level
+
+>
+<Title title="input" main="输入框" fontSize='15'></Title>
+<Title title="select" main="选择框" fontSize='15'></Title>
+<Title title="period" main="时间范围" fontSize='15'></Title>
+<Title title="number-interval" main="数字范围" fontSize='15'></Title>
+<Title title="input-number" main="数字输入框" fontSize='15'></Title>
+<Title title="time-period" main="日期时间段范围" fontSize='15'></Title>
+<Title title="month-period" main="月份时间段范围" fontSize='15'></Title>
+<Title title="select-Level" main="选择等级" fontSize='15'></Title>
+>
+
+## tableColumns 
+设置列表字段的配置
+
+>
+#### (item)
+<Title title="title" main="字段映射中文" fontSize='15'></Title>
+<Title title="type" main="按钮类型" fontSize='15'></Title>
+<Title title="key" main="字段名" fontSize='15'></Title>
+<Title title="dataIndex" main="字段名" fontSize='15'></Title>
+<Title title="width" main="宽度(带百分比)" fontSize='15'></Title>
+<Title title="align" main="对齐方式" fontSize='15'></Title>
+>

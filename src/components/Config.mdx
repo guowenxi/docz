@@ -1,0 +1,125 @@
+---
+name: 项目基础配置
+---
+
+import { Playground, Props } from 'docz'
+import { Button ,Title } from './Config.tsx'
+
+# 项目基础配置
+    项目基础配置,用于整个项目大环境的配置参数.配置文件为根目录的config/config.json
+## TITLE 
+浏览器标题
+## HEADTITLE 
+项目标题
+## HEADSUBTITLE 
+项目标题的副标
+## DEV_URL 
+测试环境的根接口路径
+- 例: `http://192.168.1.243:8080`
+## BUILD_URL 
+正式环境的根接口路径
+- 例: `http://192.168.1.243:8080`
+## RBACTOKEN
+测试环境需要配置的rbacToken
+## PUBLIC_PATH 
+打包dist项目路径
+## LOGIN_URL 
+登出需要跳转的登录路径
+
+## ROUTERLIST_URL
+路由请求接口
+
+_<font color='#ff8d8d'>*需要配合路由配置数组</font>_
+>
+#### (item)
+<Title title="url" main="接口地址" fontSize='15'></Title>
+<Title title="payload" main="接口参数" fontSize='15'></Title>
+>
+
+## ROUTERS
+路由配置数组
+
+_<font color='#ff8d8d'>*需要配合菜单接口</font>_
+>
+#### (item)
+<Title title="name" main="路由名称" fontSize='15'></Title>
+<Title title="path" main="路由在浏览器上路径地址名" fontSize='15'></Title>
+<Title title="component" main="路由位置(默认在pages内)" fontSize='15'></Title>
+>
+
+## STATICLIST
+自定义的路由配置数组
+
+_<font color='#ff8d8d'>*最多设置三级</font>_
+>
+#### (item)
+<Title title="displayName" main="路由名称" fontSize='15'></Title>
+<Title title="name" main="匹配路由的标识字段" fontSize='15'></Title>
+<Title title="type" main="'iframe'  如果需要嵌入iframe" fontSize='15'></Title>
+<Title title="tempList" main="包含子集路由参数配置的列表字段,内部格式(item)" fontSize='15'></Title>
+>
+
+## WEBSOCKETURLS
+配置webSokect长链接列表
+>
+#### (item)
+<Title title="name" main="链接名称" fontSize='15'></Title>
+<Title title="url" main="链接地址" fontSize='15'></Title>
+>
+
+## DEFAULTLOADLIST
+配置默认加载数据的请求列表
+
+_<font color='#ff8d8d'>*因为在选择器上用的比较多所以一般默认请求</font>_
+>
+#### (item)
+<Title title="type" main="'select' || 其他保存字段名" fontSize='15'></Title>
+<Title title="url" main="链接地址(可使用全路径也可使用尾路径)" fontSize='15'></Title>
+<Title title="name" main="请求需要保存的字段名(通过此字段获取数据)" fontSize='15'></Title>
+<Title title="payload" main="传入的参数(可选)" fontSize='15'></Title>
+>
+
+
+## ROOT_MAP_CENTER 
+默认初始化地图当前位置
+- 例: [120,30]
+
+
+<!-- 
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button>Click me</Button>
+</Playground>
+
+## With different sizes
+
+<Playground>
+  <Button scale="small">Click me</Button>
+  <Button scale="normal">Click me</Button>
+  <Button scale="big">Click me</Button>
+</Playground>
+
+## With different colors
+
+<Playground>
+  <Button kind="primary">Click me</Button>
+  <Button kind="secondary">Click me</Button>
+  <Button kind="cancel">Click me</Button>
+  <Button kind="dark">Click me</Button>
+  <Button kind="gray">Click me</Button>
+</Playground>
+
+## Outlined
+
+<Playground>
+  <Button kind="primary" outline>Click me</Button>
+  <Button kind="secondary" outline>Click me</Button>
+  <Button kind="cancel" outline>Click me</Button>
+  <Button kind="dark" outline>Click me</Button>
+  <Button kind="gray" outline>Click me</Button>
+</Playground>
+ -->

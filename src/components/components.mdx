@@ -1,0 +1,252 @@
+---
+name: 组件
+
+---
+
+import { Playground, Props } from 'docz'
+import { Button ,Title } from './Config.tsx'
+
+
+# 详情组件
+
+一些常用组件,的配置说明, 主页面的详情组件在src/pages/#\{主页面名\}/TABLEJSON.json内 
+
+_<font color='#ff8d8d'>*TABLEJSON.json是以数组的形式保存,如果有多个详情按钮,这里的数组将会是多维</font>_
+
+## 详情组件通用字段
+
+>
+<Title title="name" main="关联的字段名" fontSize='15'></Title>
+<Title title="width" main="组件在详情里的宽度" fontSize='15'></Title>
+<Title title="label" main="组件标题配置" fontSize='15'></Title>
+    <Title title="name" main="组件标题名" fontSize='13' ml="30"></Title>
+    <Title title="*col" main="标题所占份数(总为10份)" fontSize='13' ml="30" rt="3"></Title>
+    <Title title="*style" main="标题样式" fontSize='13' ml="30" rt="{}"></Title>
+<Title title="field" main="组件内容配置" fontSize='15'></Title>
+    <Title title="*col" main="内容所占份数(总为10份)" fontSize='13' ml="30"  rt="7"></Title>
+    <Title title="type" main="内容类型(见其他类型配置)" fontSize='13' ml="30"  rt="NULL"></Title>
+    <Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+    <Title title="*defaultValue" main="内容类型相关配置" fontSize='13' ml="50"  rt="''"></Title>
+    <Title title="*placeholder" main="默认值" fontSize='13' ml="50"  rt="NULL"></Title>
+    <Title title="*relateNames" main="多组件联动的name" fontSize='13' ml="50"  rt="{}"></Title>
+    <Title title="*style" main="内容自定样式" fontSize='13' ml="50" rt="{}"></Title>
+    <Title title="rules" main="是否必填配置" fontSize='13' ml="30"  rt="NULL"></Title>
+    <Title title="required" main="是否必填(boolean)" fontSize='13' ml="50" rt="true"></Title>
+    <Title title="message" main="必填的提示文字" fontSize='13' ml="50" rt="''"></Title>
+>
+
+## input 输入框
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="input" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## inputNumber 数字输入框
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="inputNumber" fontSize='13' ml="50" rt="input"></Title>
+<Title title="*min" main="最小值" fontSize='13' ml="50" rt="0"></Title>
+<Title title="*max" main="最大值" fontSize='13' ml="50" rt="0"></Title>
+>
+
+## textArea 多行文字输入框
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="textArea" fontSize='13' ml="50" rt="input"></Title>
+<Title title="*min" main="最小值" fontSize='13' ml="50" rt="0"></Title>
+<Title title="*max" main="最大值" fontSize='13' ml="50" rt="0"></Title>
+<Title title="*size" main="大小" fontSize='13' ml="50" rt="0"></Title>
+>
+
+## dynamicList 动态输入框组件
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="dynamicList" fontSize='13' ml="50" rt="input"></Title>
+<Title title="*min" main="最小值" fontSize='13' ml="50" rt="0"></Title>
+<Title title="*max" main="最大值" fontSize='13' ml="50" rt="0"></Title>
+<Title title="*size" main="大小" fontSize='13' ml="50" rt="0"></Title>
+>
+
+
+
+
+## inputWithSelectArea 带区域选择的列表框
+
+_<font color='#ff8d8d'>*可以选择多个区域</font>_
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="inputWithSelectArea" fontSize='13' ml="50" rt="input"></Title>
+<Title title="areaName" main="所选区域的名称" fontSize='13' ml="50" rt="0"></Title>
+>
+
+
+## mapSelect 地图点位选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="mapSelect" fontSize='13' ml="50" rt="input"></Title>
+>
+
+
+## Radio 单选框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="Radio" fontSize='13' ml="50" rt="input"></Title>
+<Title title="options" main="绑定列表的对象,可以是默认加载的对象字符串,也可以是静态的自定义数组" fontSize='13' ml="50" rt="[{id:string,name:string}] || string"></Title>
+<Title title="*relateNames" main="需要联动组件的名字数组(字符串)" fontSize='13' ml="50" rt="''"></Title>
+<Title title="*relatekeys" main="需要联动组件的字段数组(字符串)" fontSize='13' ml="50" rt="''"></Title>
+<Title title="*clickType" main="需要关联组件的联动方式" fontSize='13' ml="50" rt="onChange || toggle"></Title>
+>
+
+## checkBox 多选框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="Radio" fontSize='13' ml="50" rt="input"></Title>
+<Title title="options" main="绑定列表的对象,可以是默认加载的对象字符串,也可以是静态的自定义数组" fontSize='13' ml="50" rt="[{id:string,name:string}] || string"></Title>
+<Title title="*relateNames" main="需要联动组件的名字数组(字符串)" fontSize='13' ml="50" rt="''"></Title>
+<Title title="*relatekeys" main="需要联动组件的字段数组(字符串)" fontSize='13' ml="50" rt="''"></Title>
+<Title title="*clickType" main="需要关联组件的联动方式" fontSize='13' ml="50" rt="onChange || toggle"></Title>
+>
+
+## rangePicker 时间范围选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="rangePicker" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## timePicker 时间选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="timePicker" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## datePicker 日期选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="timePicker" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## inputTimeSelect 选择天数倒推日期输入框
+
+_<font color='#ff8d8d'>*为能够正确显示日期,需要配合后台接口进行操作</font>_
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="inputTimeSelect" fontSize='13' ml="50" rt="input"></Title>
+<Title title="url" main="请求后台地址" fontSize='13' ml="50" rt="0"></Title>
+>
+
+
+
+## select 下拉选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="select" fontSize='13' ml="50" rt="input"></Title>
+<Title title="options" main="绑定列表的对象,可以是默认加载的对象字符串,也可以是静态的自定义数组" fontSize='13' ml="50" rt="[{id:string,name:string}] || string"></Title>
+<Title title="*relateNames" main="需要联动组件的名字数组(字符串)" fontSize='13' ml="50" rt="''"></Title>
+<Title title="*relatekeys" main="需要联动组件的字段数组(字符串)" fontSize='13' ml="50" rt="''"></Title>
+<Title title="*clickType" main="需要关联组件的联动方式" fontSize='13' ml="50" rt="onChange || toggle"></Title>
+>
+## cascader 级联选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="cascader" fontSize='13' ml="50" rt="input"></Title>
+<Title title="parentKeyName" main="级联父级key字段" fontSize='13' ml="50" rt="input"></Title>
+<Title title="relationList" main="级联关联列表配置" fontSize='13' ml="50" rt="[]"></Title>
+<Title title="url" main="关联请求地址" fontSize='13' ml="60" rt="''"></Title>
+<Title title="payload" main="关联请求参数" fontSize='13' ml="60" rt="{}"></Title>
+<Title title="name" main="关联请求保存字段名" fontSize='13' ml="60" rt="select"></Title>
+>
+
+## selectLayerTree 带树形选择的选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="selectLayerTree" fontSize='13' ml="50" rt="input"></Title>
+<Title title="*tableSetting" main="树形框设置" fontSize='13' ml="50" rt="{}"></Title>
+<Title title="getValueKey" main="绑定value的key名" fontSize='13' ml="60" rt="{}"></Title>
+<Title title="columnList" main="绑定列表的column字段设置,同TABLEJSON" fontSize='13' ml="60" rt="table[Object]"></Title>
+>
+
+## selectMultiple 下拉多选选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="selectMultiple" fontSize='13' ml="50" rt="input"></Title>
+<Title title="options" main="绑定列表的对象,可以是默认加载的对象字符串,也可以是静态的自定义数组" fontSize='13' ml="50" rt="[{id:string,name:string}] || string"></Title>
+>
+
+## selectMultiplePlate 车牌选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="selectMultiplePlate" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## selectMultipleTable 带列表的下拉多选选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="selectMultipleTable" fontSize='13' ml="50" rt="input"></Title>
+<Title title="btnText" main="弹出列表框的按钮文字" fontSize='13' ml="50" rt="''"></Title>
+<Title title="modalTitle" main="模态框的标题文字" fontSize='13' ml="50" rt="'"></Title>
+<Title title="*tableSetting" main="树形框设置" fontSize='13' ml="50" rt="{}"></Title>
+<Title title="url" main="列表请求的地址" fontSize='13' ml="60" rt="string"></Title>
+<Title title="params" main="列表请求的参数" fontSize='13' ml="60" rt="{}"></Title>
+<Title title="getValueKey" main="绑定value的key名" fontSize='13' ml="60" rt="{}"></Title>
+<Title title="nameKey" main="所选列表字段的key名" fontSize='13' ml="60" rt="{}"></Title>
+<Title title="nameKey" main="所选列表字段的id名" fontSize='13' ml="60" rt="{}"></Title>
+<Title title="columnList" main="绑定列表的column字段设置,同TABLEJSON" fontSize='13' ml="60" rt="column[Object]"></Title>
+>
+
+## selectSingleTree 带树形选择的选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="selectLayerTree" fontSize='13' ml="50" rt="input"></Title>
+<Title title="*tableSetting" main="树形框设置" fontSize='13' ml="50" rt="{}"></Title>
+<Title title="columnList" main="绑定列表的column字段设置,同TABLEJSON" fontSize='13' ml="60" rt="table[Object]"></Title>
+>
+
+## selectTbaleWithSelectMap 选择地图&列表的选择框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+待补充\..
+>
+
+## tableTitle 设置单行标题
+
+>
+<Title title="defaultValue" main="文字" fontSize='13' ml="30"  rt="NULL"></Title>
+>
+
+## twoInput 双输入框
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="twoInput" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## upload 文件上传
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="upload" fontSize='13' ml="50" rt="input"></Title>
+>
+
+## uploadImage 图片上传
+
+>
+<Title title="props" main="内容类型相关配置" fontSize='13' ml="30"  rt="NULL"></Title>
+<Title title="style" main="uploadImage" fontSize='13' ml="50" rt="input"></Title>
+>
+
